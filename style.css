@@ -76,6 +76,7 @@ body {
 
 button {
     font-family: inherit;
+    cursor: pointer;
 }
 
 
@@ -256,7 +257,7 @@ a {
 
 .brand-text h2 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 19px;
 
@@ -891,7 +892,7 @@ a {
 
 .hero h1 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: clamp(42px, 5vw, 67px);
 
@@ -1167,7 +1168,7 @@ a {
 
 .energy-core strong {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 31px;
 
@@ -1254,7 +1255,7 @@ a {
 
     margin-top: 6px;
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 13px;
 
@@ -1452,7 +1453,7 @@ a {
 
 .kpi-number strong {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 28px;
 
@@ -1629,7 +1630,7 @@ a {
 
 .section-heading h2 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 23px;
 
@@ -1744,7 +1745,7 @@ a {
 
 .panel-header h3 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 13px;
 
@@ -1910,7 +1911,7 @@ a {
 
 .gauge-ring strong {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 30px;
 
@@ -2042,6 +2043,8 @@ a {
 
     transition: .25s;
 
+    cursor: pointer;
+
 }
 
 
@@ -2122,7 +2125,7 @@ a {
 
 .building-card h3 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 11px;
 
@@ -2157,7 +2160,7 @@ a {
 
 .building-power strong {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 22px;
 
@@ -2406,7 +2409,7 @@ a {
 
 .anomaly-summary strong {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 25px;
 
@@ -2495,7 +2498,7 @@ a {
 
 .score-circle strong {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 26px;
 
@@ -2528,7 +2531,7 @@ a {
 
     margin-top: 5px;
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 15px;
 
@@ -2643,6 +2646,12 @@ a {
 
     font-size: 7px;
 
+}
+
+
+.alert-list {
+    max-height: 280px;
+    overflow-y: auto;
 }
 
 
@@ -2851,7 +2860,7 @@ a {
 
 .comparison-card-header h3 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 13px;
 
@@ -2879,7 +2888,7 @@ a {
 
 .comparison-number {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 31px;
 
@@ -3037,7 +3046,7 @@ a {
 
     color: var(--orange);
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 18px;
 
@@ -3109,7 +3118,7 @@ a {
 
     display: block;
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 30px;
 
@@ -3158,7 +3167,7 @@ a {
 
     display: block;
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 16px;
 
@@ -3357,7 +3366,7 @@ a {
 
 .event-content h3 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 13px;
 
@@ -3534,7 +3543,7 @@ a {
 
     display: block;
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 23px;
 
@@ -3697,7 +3706,7 @@ a {
 
     color: var(--green);
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 10px;
 
@@ -3706,7 +3715,7 @@ a {
 
 .recommendation-card h3 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 13px;
 
@@ -3947,14 +3956,15 @@ footer > div:first-child strong {
 }
 
 
-.modal-overlay.open {
+.modal-overlay.open,
+.modal-overlay.show {
     display: grid;
 }
 
 
 .modal {
 
-    width: min(420px,90vw);
+    width: min(460px,90vw);
 
     padding: 30px;
 
@@ -4012,6 +4022,8 @@ footer > div:first-child strong {
 
     font-size: 22px;
 
+    cursor: pointer;
+
 }
 
 
@@ -4055,7 +4067,7 @@ footer > div:first-child strong {
 
 .modal h2 {
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 19px;
 
@@ -4110,7 +4122,7 @@ footer > div:first-child strong {
 
     color: var(--green);
 
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk", sans-serif;
 
     font-size: 13px;
 
@@ -4155,6 +4167,8 @@ footer > div:first-child strong {
 
     min-width: 250px;
 
+    max-width: 380px;
+
     padding: 12px;
 
     border-radius: 10px;
@@ -4170,6 +4184,8 @@ footer > div:first-child strong {
     transition: .35s;
 
     z-index: 600;
+
+    pointer-events: none;
 
 }
 
@@ -4197,6 +4213,8 @@ footer > div:first-child strong {
 
     color: var(--green);
 
+    flex-shrink: 0;
+
 }
 
 
@@ -4216,6 +4234,8 @@ footer > div:first-child strong {
     font-size: 7px;
 
     margin-top: 3px;
+
+    word-break: break-word;
 
 }
 
@@ -4299,6 +4319,8 @@ footer > div:first-child strong {
         color: #9bb0c3;
 
         font-size: 18px;
+
+        cursor: pointer;
 
     }
 
